@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center> <h1> Displaying Webpages </h1> </center>
+    <table border="2px">
+        <tr>
+            <th>Topic_name</th>
+            <th>Name</th>
+            <th>Url</th>
+            <th>Email</th>
+        </tr>
+
+        
+        {% for to in data2 %}
+        <tr><td>{{to.Topic_name}}</td>
+            <td>{{to.Name}}</td>
+            <td>{{to.Url}}</td>
+            <td>{{to.Email}}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
